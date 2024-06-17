@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Switcher</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    .iframe-container {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+    iframe {
+      width: 243.9%;
+      height: 243.9%;
+      border: none;
+      transform: scale(0.41);
+      transform-origin: 0 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="iframe-container">
+  <iframe id="websiteFrame" src="https://ntpel.co.in/"></iframe>
+</div>
+
+<script>
+  setTimeout(function() {
+    document.getElementById('websiteFrame').src = 'https://nptel.ac.in/';
+  }, 3000);
+</script>
+
+</body>
+</html>
